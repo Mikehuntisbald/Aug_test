@@ -75,10 +75,10 @@ The following aspects are covered by the unit tests:
 
 ## 📖 Example
 **Input Image**:
-![Input Image](https://example.com/input-image.jpg)
+![Input Image](https://github.com/Mikehuntisbald/Aug_test/blob/main/Example/2d-atk.png)
 
 **Output Image (Sobel)**:
-![Output Image Sobel](https://example.com/output-image-sobel.jpg)
+![Output Image Sobel](https://github.com/Mikehuntisbald/Aug_test/blob/main/Example/example.jpg)
 
 ## 📜 License
 This project is licensed under the [MIT License](LICENSE).
