@@ -14,14 +14,18 @@ Edge Detection Backend is a C# application that implements edge detection algori
 
 ## 📁 Project Structure
 ```
-EdgeDetectionBackend/         # Main application code
-   ├── Program.cs             # Entry point
-   ├── Sobel.cs               # Sobel operator implementation
-   ├── Prewitt.cs             # Prewitt operator implementation
-   ├── README.md              # Documentation
+EdgeDetectionBackend/               # Main application code
+   ├── Program.cs                   # Entry point
+   └── EdgeDetection
+       ├── Prewitt.cs               # Prewitt operator implementation
+       └── Sobel.cs                 # Sobel operator implementation
+   └── EdgeDetectionUML
+       ├── EdgeDetectionUML.puml    # UML Source Code
+       └── out/testuml # UML
+   ├── README.md                    # Documentation
    ├── ...
-   └── EdgeDetectionBackend.Tests/ # Unit tests
-       ├── OperatorSelectionTests.cs
+   └── EdgeDetectionBackend.Tests/  # Unit tests
+       ├── EdgeDetectionTests.cs
        └── ...
 ```
 
