@@ -1,0 +1,35 @@
+@startuml test
+title EdgeDetection Backend - UML Class Diagram
+
+package EdgeDetectionBackend {
+    package EdgeDetection {
+        class Prewitt {
+            + ApplyPrewitt(inputImage: Bitmap) : Bitmap
+            - ConvertToGrayscale(inputImage: Bitmap) : Bitmap
+        }
+
+        class Sobel {
+            + ApplySobel(inputImage: Bitmap) : Bitmap
+            - ConvertToGrayscale(inputImage: Bitmap) : Bitmap
+        }
+    }
+
+    class Program {
+        + Main(args: string[]): void
+        - SelectInputFile(): string
+        - SelectSaveFile(): string
+    }
+}
+
+package Drawing {
+    class Bitmap {
+        + Save(filename: string): void
+    }
+}
+
+Program ..> EdgeDetectionBackend.EdgeDetection.Prewitt : "uses"
+Program ..> EdgeDetectionBackend.EdgeDetection.Sobel : "uses"
+EdgeDetectionBackend.EdgeDetection.Prewitt ..> Bitmap : "processes"
+EdgeDetectionBackend.EdgeDetection.Sobel ..> Bitmap : "processes"
+
+@enduml
