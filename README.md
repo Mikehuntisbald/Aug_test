@@ -60,11 +60,14 @@ dotnet test
 
 ## 🖼️ How to Use
 1. Launch the application.
-2. Select an input image via the file dialog.
-3. Choose an output file path for the processed image.
+2. Select an input image via the file dialog.  
+   ![Select Input Image](https://github.com/Mikehuntisbald/Aug_test/blob/main/Example/pic_selec.png)
+3. Choose an output file path for the processed image.  
+   ![Specify Output File Path](https://github.com/Mikehuntisbald/Aug_test/blob/main/Example/output_name.png)
 4. Select the edge detection operator:
    - `1` for Sobel
-   - `2` for Prewitt
+   - `2` for Prewitt  
+   ![Select Edge Detection Operator](https://github.com/Mikehuntisbald/Aug_test/blob/main/Example/operator_selec.png)
 5. View the processed image saved at the specified output location.
 
 ## 🧪 Testing Details
